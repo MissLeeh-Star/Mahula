@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Skills</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e90ff, #00bfff, #87cefa, #f0f8ff);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #1e90ff, #00bfff);
+        }
+
+        .skill-card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #1e90ff;
+        }
+
+        .skill-card p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1e90ff;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: white;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Core Professional Skills</h1>
+            <p>Combining technical expertise with essential soft skills</p>
+        </header>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="icon">🗣️</div>
+                <h3>Effective Communication</h3>
+                <p>Articulating ideas clearly and persuasively in both written and verbal formats to achieve mutual understanding and drive results.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">🔒</div>
+                <h3>Integrity</h3>
+                <p>Maintaining strong ethical principles and consistency in actions, building trust through reliability and honesty.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">👂</div>
+                <h3>Active Listening</h3>
+                <p>Fully concentrating, understanding, and responding thoughtfully to others, creating meaningful dialogue and collaboration.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">🎨</div>
+                <h3>Creativity</h3>
+                <p>Generating innovative solutions and approaches by thinking outside conventional frameworks and paradigms.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">☀️</div>
+                <h3>Optimism</h3>
+                <p>Approaching challenges with positive expectation and confidence, inspiring others through constructive perspective.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">🎤</div>
+                <h3>Public Speaking</h3>
+                <p>Engaging audiences effectively through confident delivery, compelling storytelling, and clear message articulation.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Combining technical expertise with human-centered skills for comprehensive professional excellence</p>
+        </footer>
+    </div>
+</body>
+</html>

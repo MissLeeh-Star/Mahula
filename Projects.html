@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects Showcase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6dd5ed 0%, #f6e7fa 50%, #2193b0 100%);
+            min-height: 100vh;
+            color: #222;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: #2193b0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: linear-gradient(120deg, #ffffff 60%, #c6e6fa 100%);
+            border-radius: 18px;
+            box-shadow: 0 8px 24px rgba(33,147,176,0.08);
+            padding: 2rem 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 16px 32px rgba(33,147,176,0.16);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: #2193b0;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-type {
+            display: inline-block;
+            background: #6dd5ed;
+            color: #fff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .project-desc {
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        /* Responsive design */
+        @media (max-width: 800px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #2193b0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Projects</h1>
+            <p>Empowering growth and well-being through creative initiatives</p>
+        </header>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-type">Podcast</div>
+                <div class="project-title">The Well-Being Wavelength</div>
+                <div class="project-desc">
+                    A podcast dedicated to uplifting people's spirits, sharing stories, and inspiring positivity. Each episode explores topics on mental health, happiness, and personal fulfillment, aiming to empower listeners to live their best lives.
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-type">Workshop</div>
+                <div class="project-title">Unlocking Your Potential</div>
+                <div class="project-desc">
+                    An interactive workshop focused on personal awareness, growth, and development. Participants engage in exercises and discussions designed to foster self-discovery, build confidence, and set actionable goals for a more fulfilling future.
+                </div>
+            </div>
+        </div>
+        <footer>
+            Inspiring change, one project at a time.
+        </footer>
+    </div>
+</body>
+</html>

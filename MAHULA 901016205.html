@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile - Relebohile Mahula Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1E2761, #408EC6);
+      color: #E7E8D1;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: rgba(122, 32, 72, 0.85);
+      padding: 15px 0;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .nav-menu li a {
+      color: #E7E8D1;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+      background-color: #B85042;
+      color: #fff;
+      box-shadow: 0 0 8px #B85042;
+    }
+    #profile {
+      text-align: center;
+      flex-grow: 1;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 5px #7A2048;
+    }
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+      text-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #B85042;
+      box-shadow: 0 0 15px #B85042;
+      margin-bottom: 30px;
+    }
+    .social-links {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+    .social-links a {
+      color: #A7BEAE;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 0 12px;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: #B85042;
+      text-shadow: 0 0 8px #B85042;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #A7BEAE;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Profile</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="profile">
+    <img src="profile.jpg" alt="Relebohile Mahula" class="profile-pic" />
+    <h1>Relebohile Mahula</h1>
+    <p>I am a young, passionate radio presenter who focuses on the well-being of people around her. My mission is to inspire and uplift through meaningful communication.</p>
+    <p>Find me on social media:</p>
+    <div class="social-links">
+      <a href="https://facebook.com/RelebohileEusebiaMahula" target="_blank" aria-label="Facebook">Facebook</a> |
+      <a href="https://tiktok.com/@MissLeeh" target="_blank" aria-label="TikTok">TikTok</a> |
+      <a href="https://linkedin.com/in/MissLeeh" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Relebohile Mahula</p>
+  </footer>
+</body>
+</html>
+2. Skills Page (skills.html)
+xml
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills - Relebohile Mahula Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #408EC6, #A7BEAE);
+      color: #1E2761;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: rgba(122, 32, 72, 0.85);
+      padding: 15px 0;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .nav-menu li a {
+      color: #E7E8D1;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+      background-color: #B85042;
+      color: #fff;
+      box-shadow: 0 0 8px #B85042;
+    }
+    #skills {
+      flex-grow: 1;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.8rem;
+      margin-bottom: 25px;
+      color: #7A2048;
+      text-shadow: 1px 1px 3px #408EC6;
+    }
+    .skills-list {
+      list-style-type: square;
+      padding-left: 0;
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: 1.3rem;
+      line-height: 2;
+      color: #1E2761;
+      background: #E7E8D1;
+      border-radius: 15px;
+      padding: 25px 40px;
+      box-shadow: 0 0 15px #7A2048;
+      text-align: left;
+    }
+    .skills-list li {
+      margin-bottom: 12px;
+    }
+    #skills img {
+      width: 200px;
+      margin: 30px auto 0;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #B85042;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #7A2048;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Effective Communication Skill</li>
+      <li>Integrity</li>
+      <li>Listening Skills</li>
+      <li>Creativity</li>
+      <li>Optimism</li>
+      <li>Public Speaking</li>
+    </ul>
+    <img src="skills.jpg" alt="Skills related image" />
+  </section>
+
+  <footer>
+    <p>© 2025 Relebohile Mahula</p>
+  </footer>
+</body>
+</html>
+3. Projects Page (projects.html)
+xml
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Relebohile Mahula Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #A7BEAE, #B85042);
+      color: #1E2761;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: rgba(30, 39, 97, 0.85);
+      padding: 15px 0;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .nav-menu li a {
+      color: #E7E8D1;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+      background-color: #7A2048;
+      color: #fff;
+      box-shadow: 0 0 8px #7A2048;
+    }
+    #projects {
+      flex-grow: 1;
+      color: #1E2761;
+    }
+    h2 {
+      font-size: 2.8rem;
+      margin-bottom: 25px;
+      color: #7A2048;
+      text-align: center;
+      text-shadow: 1px 1px 3px #408EC6;
+    }
+    .project {
+      background-color: #E7E8D1;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 15px #7A2048;
+      color: #1E2761;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .project img {
+      width: 140px;
+      height: 100px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 0 10px #B85042;
+    }
+    .project-content {
+      flex-grow: 1;
+    }
+    .project h3 {
+      margin-bottom: 10px;
+      color: #B85042;
+    }
+    .project p {
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+    .project a {
+      color: #7A2048;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .project a:hover {
+      text-decoration: underline;
+      color: #B85042;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #7A2048;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="project1.jpg" alt="Portfolio Website" />
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/johndoe/portfolio" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="project2.jpg" alt="Photography Blog" />
+      <div class="project-content">
+        <h3>Photography Blog</h3>
+        <p>A blog showcasing my photography work with a custom CMS.</p>
+        <a href="https://photoblog.johndoe.com" target="_blank">Visit Blog</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Relebohile Mahula</p>
+  </footer>
+</body>
+</html>
+4. Gallery Page (gallery.html)
+xml
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - Relebohile Mahula Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #7A2048, #408EC6);
+      color: #E7E8D1;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: rgba(167, 190, 174, 0.85);
+      padding: 15px 0;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .nav-menu li a {
+      color: #1E2761;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+      background-color: #B85042;
+      color: #fff;
+      box-shadow: 0 0 8px #B85042;
+    }
+    #gallery {
+      flex-grow: 1;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.8rem;
+      margin-bottom: 25px;
+      color: #E7E8D1;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #B85042;
+      box-shadow: 0 0 15px #B85042;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #E7E8D1;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #E7E8D1;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="work1.jpg" alt="Project Work 1" />
+      <img src="work2.jpg" alt="Project Work 2" />
+      <img src="work3.jpg" alt="Project Work 3" />
+      <img src="work4.jpg" alt="Project Work 4" />
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Relebohile Mahula</p>
+  </footer>
+</body>
+</html>
+5. Contact Page (contact.html)
+xml
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Relebohile Mahula Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #B85042, #1E2761);
+      color: #E7E8D1;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: rgba(64, 142, 198, 0.85);
+      padding: 15px 0;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .nav-menu li a {
+      color: #E7E8D1;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+      background-color: #A7BEAE;
+      color: #1E2761;
+      box-shadow: 0 0 8px #A7BEAE;
+    }
+    #contact {
+      flex-grow: 1;
+      max-width: 600px;
+      margin: auto;
+      background: rgba(30, 39, 97, 0.8);
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #B85042;
+    }
+    h2 {
+      font-size: 2.8rem;
+      margin-bottom: 25px;
+      color: #E7E8D1;
+      text-align: center;
+      text-shadow: 1px 1px 3px #7A2048;
+    }
+    .intro-text {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      color: #A7BEAE;
+      line-height: 1.5;
+      text-align: center;
+    }
+    .contact-info {
+      font-size: 1.15rem;
+      margin-bottom: 25px;
+      color: #E7E8D1;
+      text-align: center;
+      user-select: text;
+    }
+    .contact-info strong {
+      font-weight: 700;
+      margin-right: 8px;
+    }
+    .contact-info a {
+      color: #B85042;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: #E7E8D1;
+      text-shadow: 0 0 8px #E7E8D1;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .contact-form label {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #A7BEAE;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      resize: vertical;
+      box-shadow: inset 0 0 6px #7A2048;
+      background-color: #E7E8D1;
+      color: #1E2761;
+      transition: box-shadow 0.3s ease;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      box-shadow: 0 0 12px #B85042;
+    }
+    .contact-form button {
+      background-color: #B85042;
+      color: #E7E8D1;
+      border: none;
+      padding: 14px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #7A2048;
+      box-shadow: 0 0 15px #7A2048;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #A7BEAE;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p class="intro-text">My name is Relebohile Mahula. I am a dedicated radio presenter passionate about connecting with and uplifting my community through meaningful communication.</p>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:relebohilemahula31@gmail.com">relebohilemahula31@gmail.com</a></p>
+      <p><strong>Phone:</strong> 58365259 / 62876458</p>
+    </div>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Relebohile Mahula</p>
+  </footer>
+</body>
+</html>

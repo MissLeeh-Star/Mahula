@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Social Proof</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3a0ca3;
+            --accent: #f72585;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4361ee, #3a0ca3, #7209b7, #f72585);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            color: var(--light);
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, var(--light), #f8f9fa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .social-proof {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .proof-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8px);
+            transition: all 0.3s ease;
+            color: var(--dark);
+        }
+
+        .proof-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-right: 1rem;
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .skills-list, .hobbies-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li, .hobbies-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .skills-list li:last-child, .hobbies-list li:last-child {
+            border-bottom: none;
+        }
+
+        .skill-icon, .hobby-icon {
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .testimonial {
+            font-style: italic;
+            padding: 1.5rem;
+            background: rgba(67, 97, 238, 0.1);
+            border-radius: 15px;
+            margin-top: 1.5rem;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            opacity: 0.1;
+            top: -1rem;
+            left: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-style: italic;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Social Proof</h1>
+            <p>Verified skills and passions that define my professional journey</p>
+        </header>
+
+        <div class="social-proof">
+            <div class="proof-card">
+                <div class="card-header">
+                    <div class="card-icon">💼</div>
+                    <h3 class="card-title">Core Skills</h3>
+                </div>
+                <ul class="skills-list">
+                    <li><span class="skill-icon">🗣️</span> Effective Communication</li>
+                    <li><span class="skill-icon">🔒</span> Integrity & Trustworthiness</li>
+                    <li><span class="skill-icon">👂</span> Active Listening Skills</li>
+                    <li><span class="skill-icon">🎨</span> Creative Problem Solving</li>
+                    <li><span class="skill-icon">☀️</span> Unwavering Optimism</li>
+                    <li><span class="skill-icon">🎤</span> Compelling Public Speaking</li>
+                </ul>
+            </div>
+
+            <div class="proof-card">
+                <div class="card-header">
+                    <div class="card-icon">❤️</div>
+                    <h3 class="card-title">Passion Projects</h3>
+                </div>
+                <ul class="hobbies-list">
+                    <li><span class="hobby-icon">📚</span> Avid Novel Reader</li>
+                    <li><span class="hobby-icon">✨</span> Girls' Empowerment Mentor</li>
+                    <li><span class="hobby-icon">🎧</span> Music Therapy Enthusiast</li>
+                </ul>
+                <div class="testimonial">
+                    "Her ability to connect complex ideas with real-world applications makes her both an inspiring speaker and mentor." By Tseleng Rats'iu.
+                </div>
+            </div>
+
+            <div class="proof-card">
+                <div class="card-header">
+                    <div class="card-icon">🌟</div>
+                    <h3 class="card-title">Professional Impact</h3>
+                </div>
+                <div class="testimonial">
+                    "Combines rare emotional intelligence with practical communication skills that transform teams and inspire action, she has really been a wpman to look up to." By Mamello Lepola.
+                </div>
+                <div class="testimonial" style="margin-top: 1rem;">
+                    "Her workshops on empowerment blend creativity with actionable strategies that resonate across generations."by Tshedy Mokhesuoe.
+                </div>
+                <ul class="hobbies-list" style="margin-top: 1.5rem;">
+                    <li><span class="hobby-icon">📈</span> 50+ Speaking Engagements</li>
+                    <li><span class="hobby-icon">👩‍🎓</span> Mentored 100+ Young Women</li>
+                    <li><span class="hobby-icon">📖</span> 200+ Books Consumed</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>"Our skills become our superpowers when aligned with purpose."</p>
+        </footer>
+    </div>
+</body>
+</html>
